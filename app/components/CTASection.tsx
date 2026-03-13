@@ -1,3 +1,4 @@
+import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const imgArrow =
@@ -19,14 +20,14 @@ export default function CTASection() {
           At Liberty CAD, We Don&apos;t Just Design — We Deliver Confidence.
         </h2>
         <p className="font-[family-name:var(--font-inter)] font-normal text-[16px] text-white/45 leading-[1.75] mb-12 max-w-[414px] mx-auto">
-          Let&apos;s remove the engineering bottlenecks slowing your fabrication
-          projects.
+          Let&apos;s remove the engineering capacity constraints slowing your
+          plant projects.
         </p>
 
         {/* Buttons */}
-        <AnimateOnScroll delay={150} className="flex items-center justify-center gap-4 mb-8">
-          <a
-            href="mailto:info@libertycad.com"
+        <AnimateOnScroll delay={150} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+          <Link
+            href="/contact"
             className="btn-scale group flex items-center gap-2.5 bg-white text-[#0b2545] font-[family-name:var(--font-inter)] font-semibold text-[14.5px] tracking-[0.145px] px-6 h-[50px] rounded-[8px] hover:bg-white/90 transition-colors"
           >
             Get a Quote
@@ -35,9 +36,9 @@ export default function CTASection() {
               alt=""
               className="size-[15px] transition-transform duration-200 group-hover:translate-x-1"
             />
-          </a>
+          </Link>
           <a
-            href="tel:5199955795"
+            href="tel:2265265336"
             className="btn-scale group flex items-center gap-2.5 bg-white/[0.06] border border-white/12 text-white/75 font-[family-name:var(--font-inter)] font-medium text-[14.5px] tracking-[0.145px] px-6 h-[51px] rounded-[8px] hover:bg-white/10 transition-colors"
           >
             <img
@@ -55,10 +56,10 @@ export default function CTASection() {
             Or call us directly:
           </span>
           <a
-            href="tel:5199955795"
+            href="tel:2265265336"
             className="font-[family-name:var(--font-inter)] font-medium text-[13.5px] text-white/50 hover:text-white/70 transition-colors"
           >
-            519-995-5795
+            226-526-5336
           </a>
         </AnimateOnScroll>
       </AnimateOnScroll>

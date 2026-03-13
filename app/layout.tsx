@@ -13,9 +13,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Liberty CAD — Engineering Precision. Fabrication Confidence.",
+  title: "Liberty CAD — Engineering Precision. From Design to Delivery.",
   description:
-    "Engineering support that helps fabricators deliver complex projects without delays, rework, or compliance issues.",
+    "Liberty CAD — multidisciplinary plant engineering consulting services. Process, structural, mechanical, piping engineering. From design to delivery across North America.",
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body className={`${inter.variable} ${manrope.variable} antialiased`}>
         {children}
       </body>

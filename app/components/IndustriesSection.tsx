@@ -38,51 +38,41 @@ const industries = [
   },
   {
     icon: "https://www.figma.com/api/mcp/asset/d37d5666-7978-4737-904a-211cf9b87f48",
-    name: "Food Processing",
-    color: "rgba(230,126,34,0.06)",
-  },
-  {
-    icon: "https://www.figma.com/api/mcp/asset/a74c76ca-fad5-4cf3-8edf-66600c556576",
-    name: "Packing",
-    color: "rgba(27,79,114,0.06)",
-  },
-  {
-    icon: "https://www.figma.com/api/mcp/asset/baf7c65b-882f-4903-a3fb-b8c42d868f09",
-    name: "Industrial Steel",
+    name: "Industrial & Commercial Steel",
     color: "rgba(44,62,80,0.06)",
   },
 ];
 
 export default function IndustriesSection() {
   return (
-    <section id="industries" className="bg-[#f7f8fa] py-24">
+    <section id="industries" className="bg-[#f7f8fa] py-16 md:py-24">
       <div className="max-w-[1120px] mx-auto px-6">
         {/* Header */}
-        <AnimateOnScroll className="text-center mb-16">
+        <AnimateOnScroll className="text-center mb-10 md:mb-16">
           <p className="font-[family-name:var(--font-inter)] font-semibold text-[11.5px] text-[rgba(27,79,114,0.8)] tracking-[1.84px] uppercase mb-4">
             Industries
           </p>
-          <h2 className="font-[family-name:var(--font-manrope)] font-bold text-[48px] text-[#0b2545] leading-[1.1] tracking-[-1.2px] max-w-[502px] mx-auto">
+          <h2 className="font-[family-name:var(--font-manrope)] font-bold text-[32px] md:text-[48px] text-[#0b2545] leading-[1.1] tracking-[-1.2px] max-w-[502px] mx-auto">
             Trusted Across Critical Industries
           </h2>
         </AnimateOnScroll>
 
-        {/* Grid: 5 per row */}
-        <div className="grid grid-cols-5 gap-5">
+        {/* Grid: responsive */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
           {industries.map((industry, i) => (
             <AnimateOnScroll key={industry.name} delay={i * 60}>
-              <div className="industry-card bg-white border border-[#eceef1] rounded-[14px] py-10 flex flex-col items-center gap-5 group cursor-default">
+              <div className="industry-card bg-white border border-[#eceef1] rounded-[14px] py-6 md:py-10 flex flex-col items-center gap-3 md:gap-5 group cursor-default">
                 <div
-                  className="size-12 rounded-[14px] flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
+                  className="size-10 md:size-12 rounded-[12px] md:rounded-[14px] flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
                   style={{ backgroundColor: industry.color }}
                 >
                   <img
                     src={industry.icon}
                     alt=""
-                    className="size-[22px] transition-transform duration-300 group-hover:scale-110"
+                    className="size-[18px] md:size-[22px] transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>
-                <span className="font-[family-name:var(--font-inter)] font-medium text-[13px] text-[#5a6677] tracking-[0.13px] text-center transition-colors duration-200 group-hover:text-[#0b2545]">
+                <span className="font-[family-name:var(--font-inter)] font-medium text-[12px] md:text-[13px] text-[#5a6677] tracking-[0.13px] text-center transition-colors duration-200 group-hover:text-[#0b2545]">
                   {industry.name}
                 </span>
               </div>

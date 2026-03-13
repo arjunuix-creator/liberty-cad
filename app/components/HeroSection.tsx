@@ -1,5 +1,6 @@
-const imgHero =
-  "https://www.figma.com/api/mcp/asset/98c9849d-1d40-489b-a9b7-19e6920fc4d9";
+import Link from "next/link";
+
+const imgHero = "/Hero-bannar.jpg";
 const imgArrowRight =
   "https://www.figma.com/api/mcp/asset/60013d6d-5fac-4677-a18b-f75a5432b586";
 const imgChevronDown =
@@ -9,6 +10,7 @@ const industries = [
   "Oil & Gas",
   "Energy",
   "Chemical",
+  "Geothermal",
   "Mining",
   "Water Treatment",
 ];
@@ -33,28 +35,21 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-[1120px] mx-auto px-6 flex flex-col justify-center min-h-screen">
         <div className="max-w-[600px] pt-24 pb-16">
           {/* Heading lines — each staggered */}
-          <h1 className="font-[family-name:var(--font-manrope)] font-extrabold text-[clamp(48px,5vw,76px)] leading-[1.02] tracking-[-2.66px] mb-10">
-            <span className="block text-white animate-fade-up delay-100">Engineering</span>
-            <span className="block text-white animate-fade-up delay-200">Precision.</span>
-            <span className="block text-[#7ec8e3] animate-fade-up delay-300">Fabrication</span>
-            <span className="block text-[#7ec8e3] animate-fade-up delay-400">Confidence.</span>
+          <h1 className="font-[family-name:var(--font-manrope)] font-extrabold text-[clamp(36px,5vw,76px)] leading-[1.02] tracking-[-2.66px] mb-6 md:mb-10">
+            <span className="block whitespace-nowrap text-white animate-fade-up delay-100">Engineering Precision.</span>
+            <span className="block whitespace-nowrap text-[#7ec8e3] animate-fade-up delay-200">From Design to Delivery.</span>
           </h1>
 
           {/* Body */}
-          <p className="animate-fade-up delay-500 font-[family-name:var(--font-inter)] text-[18px] text-white/85 leading-[1.7] tracking-[-0.09px] mb-5 max-w-[470px]">
-            Engineering support that helps fabricators deliver complex projects
-            without delays, rework, or compliance issues.
-          </p>
-          <p className="animate-fade-up delay-600 font-[family-name:var(--font-inter)] text-[15px] text-white/50 leading-[1.8] mb-12 max-w-[425px]">
-            From concept to construction-ready documentation, Liberty CAD
-            partners with fabricators to ensure designs translate seamlessly
-            into real-world production.
+          <p className="animate-fade-up delay-500 font-[family-name:var(--font-inter)] text-[16px] md:text-[18px] text-white/85 leading-[1.7] tracking-[-0.09px] mb-5 max-w-[580px]">
+            <span className="block">A full spectrum of engineering consulting services for Oil &amp; Gas, Power Generation, Chemical, Mining, and Water Treatment plants.</span>
+            <span className="block mt-1">Supporting every phase of project development — from concept to definitive design and construction documentation.</span>
           </p>
 
           {/* CTAs */}
-          <div className="animate-fade-up delay-700 flex items-center gap-5">
-            <a
-              href="#contact"
+          <div className="animate-fade-up delay-700 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5">
+            <Link
+              href="/contact"
               className="btn-scale group flex items-center gap-2.5 bg-white text-[#0b2545] font-[family-name:var(--font-inter)] font-semibold text-[14.5px] tracking-[0.145px] px-6 h-[51px] rounded-[8px] hover:bg-white/90 transition-colors"
             >
               Get a Quote
@@ -63,9 +58,9 @@ export default function HeroSection() {
                 alt=""
                 className="size-[15px] transition-transform duration-200 group-hover:translate-x-1"
               />
-            </a>
-            <a
-              href="#services"
+            </Link>
+            <Link
+              href="/services"
               className="btn-scale group flex items-center gap-2.5 border border-white/20 text-white/85 font-[family-name:var(--font-inter)] font-medium text-[14.5px] tracking-[0.145px] px-6 h-[51px] rounded-[8px] hover:bg-white/10 transition-colors"
             >
               Explore Our Services
@@ -74,7 +69,7 @@ export default function HeroSection() {
                 alt=""
                 className="size-[15px] transition-transform duration-200 group-hover:translate-y-0.5"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -84,14 +79,14 @@ export default function HeroSection() {
         <div className="max-w-[1120px] mx-auto px-6 h-[60px] flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <span className="animate-blink size-[5px] rounded-full bg-[rgba(0,212,146,0.8)]" />
-            <span className="font-[family-name:var(--font-inter)] font-medium text-[12.5px] text-white/40 tracking-[0.25px]">
-              Supporting industrial fabricators across North America
+            <span className="font-[family-name:var(--font-inter)] font-medium text-[11px] md:text-[12.5px] text-white/40 tracking-[0.25px]">
+              Supporting plant owners, EPC companies, and contractors across North America
             </span>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-3 flex-nowrap">
             {industries.map((industry, i) => (
-              <span key={industry} className="flex items-center gap-3">
-                <span className="font-[family-name:var(--font-inter)] font-medium text-[11.5px] text-white/25 tracking-[0.46px] uppercase hover:text-white/50 transition-colors cursor-default">
+              <span key={industry} className="flex items-center gap-3 flex-shrink-0">
+                <span className="font-[family-name:var(--font-inter)] font-medium text-[11.5px] text-white/25 tracking-[0.46px] uppercase hover:text-white/50 transition-colors cursor-default whitespace-nowrap">
                   {industry}
                 </span>
                 {i < industries.length - 1 && (

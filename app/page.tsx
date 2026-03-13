@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import EmpathySection from "./components/EmpathySection";
 import ApproachSection from "./components/ApproachSection";
 import ServicesSection from "./components/ServicesSection";
+import CredibilityBar from "./components/CredibilityBar";
 import ExpertiseSection from "./components/ExpertiseSection";
 import IndustriesSection from "./components/IndustriesSection";
 import TrustSection from "./components/TrustSection";
@@ -18,6 +19,7 @@ export default function Home() {
         <EmpathySection />
         <ApproachSection />
         <ServicesSection />
+        <CredibilityBar />
         <ExpertiseSection />
         <IndustriesSection />
         <TrustSection />

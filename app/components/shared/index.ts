@@ -1,0 +1,10 @@
+export { default as SectionHeader } from "./SectionHeader";
+export { default as ServicesGrid } from "./ServicesGrid";
+export type { ServiceItem } from "./ServicesGrid";
+export { default as IndustryGrid } from "./IndustryGrid";
+export type { IndustryItem } from "./IndustryGrid";
+export { default as TestimonialSection } from "./TestimonialSection";
+export type { Testimonial } from "./TestimonialSection";
+export { default as CaseStudyCard, CaseStudyGrid } from "./CaseStudyCard";
+export type { CaseStudy } from "./CaseStudyCard";
+export { default as CTASection } from "./CTASection";
