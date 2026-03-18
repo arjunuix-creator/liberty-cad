@@ -53,7 +53,7 @@ const stats = [
 const keyFacts = [
   { attribute: "Parent Company", detail: "Liberty Steel" },
   { attribute: "Established", detail: "2015" },
-  { attribute: "Office", detail: "Irving, TX" },
+  { attribute: "Office", detail: "6565 N McArthur Blvd, Suite 225, Irving, TX 75039" },
   { attribute: "Phone", detail: "226-526-5336" },
   { attribute: "Team Size", detail: "50+ engineers and staff" },
   { attribute: "Certification", detail: "AS 9100 Certified" },

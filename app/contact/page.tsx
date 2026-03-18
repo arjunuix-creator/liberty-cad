@@ -9,7 +9,7 @@ import AnimateOnScroll from "../components/AnimateOnScroll";
 const contactInfo = [
   {
     label: "Office",
-    value: "Irving, TX",
+    value: "6565 N McArthur Blvd, Suite 225, Irving, TX 75039",
     href: null,
   },
   {
@@ -274,7 +274,7 @@ export default function ContactPage() {
                 Our Office
               </p>
               <h2 className="font-[family-name:var(--font-manrope)] font-bold text-[40px] text-[#0b2545] leading-[1.15] tracking-[-1px] mb-5">
-                Irving, TX — Serving North America &amp; Worldwide
+                6565 N McArthur Blvd, Suite 225, Irving, TX 75039 — Serving North America &amp; Worldwide
               </h2>
               <p className="font-[family-name:var(--font-inter)] text-[16px] text-[#7a8694] leading-[1.75] max-w-[520px] mx-auto">
                 We are in the business of engineering, but what we are really building is a

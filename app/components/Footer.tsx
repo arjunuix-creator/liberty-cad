@@ -111,7 +111,7 @@ export default function Footer() {
               <li>
                 <div className="flex items-start gap-3 font-[family-name:var(--font-inter)] font-normal text-[13.5px] text-white/30">
                   <MapPin size={14} strokeWidth={1.75} className="shrink-0 mt-0.5" />
-                  Irving, TX
+                  6565 N McArthur Blvd, Suite 225<br />Irving, TX 75039
                 </div>
               </li>
             </ul>
