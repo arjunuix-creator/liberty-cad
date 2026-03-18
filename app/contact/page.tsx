@@ -9,7 +9,7 @@ import AnimateOnScroll from "../components/AnimateOnScroll";
 const contactInfo = [
   {
     label: "Office",
-    value: "6565 N MacArthur Blvd, Irving, TX 75039",
+    value: "Irving, TX",
     href: null,
   },
   {
@@ -19,8 +19,8 @@ const contactInfo = [
   },
   {
     label: "Email",
-    value: "info@libertycad.com",
-    href: "mailto:info@libertycad.com",
+    value: "Info@libertyinnovation.com",
+    href: "mailto:Info@libertyinnovation.com",
   },
 ];
 
@@ -278,7 +278,7 @@ export default function ContactPage() {
               </h2>
               <p className="font-[family-name:var(--font-inter)] text-[16px] text-[#7a8694] leading-[1.75] max-w-[520px] mx-auto">
                 We are in the business of engineering, but what we are really building is a
-                brighter future. Call us directly at 226-526-5336 or email info@libertycad.com.
+                brighter future. Call us directly at 226-526-5336 or email Info@libertyinnovation.com.
               </p>
             </AnimateOnScroll>
           </div>

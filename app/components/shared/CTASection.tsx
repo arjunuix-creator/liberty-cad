@@ -1,10 +1,6 @@
 import AnimateOnScroll from "../AnimateOnScroll";
 import Link from "next/link";
-
-const imgArrow =
-  "https://www.figma.com/api/mcp/asset/7406dfcc-118d-4411-bd1d-468423e2bc1c";
-const imgPhone =
-  "https://www.figma.com/api/mcp/asset/4b9c2d39-60c1-4e8a-8dd7-e1b4d98a699f";
+import { ArrowRight, Phone } from "lucide-react";
 
 interface CTASectionProps {
   label?: string;
@@ -60,33 +56,33 @@ export default function CTASection({
         <AnimateOnScroll delay={150} className="flex items-center justify-center gap-4 flex-wrap">
           <Link
             href={primaryButton.href}
-            className="btn-scale group flex items-center gap-2.5 bg-white text-[#0b2545] font-[family-name:var(--font-inter)] font-semibold text-[14.5px] tracking-[0.145px] px-6 h-[50px] rounded-[8px] hover:bg-white/90 transition-colors"
+            className="btn-scale group flex items-center gap-2.5 bg-white text-[#0b2545] font-[family-name:var(--font-inter)] font-medium text-[14.5px] tracking-[0.145px] px-6 h-[50px] rounded-[8px] hover:bg-white/90 hover:scale-[1.02] transition-all duration-200"
           >
             {primaryButton.text}
-            <img
-              src={imgArrow}
-              alt=""
-              className="size-[15px] transition-transform duration-200 group-hover:translate-x-1"
+            <ArrowRight
+              size={15}
+              strokeWidth={2}
+              className="transition-transform duration-200 group-hover:translate-x-1"
             />
           </Link>
           {secondaryButton && (
             <Link
               href={secondaryButton.href}
-              className="btn-scale group flex items-center gap-2.5 bg-white/[0.06] border border-white/12 text-white/75 font-[family-name:var(--font-inter)] font-medium text-[14.5px] tracking-[0.145px] px-6 h-[51px] rounded-[8px] hover:bg-white/10 transition-colors"
+              className="btn-scale group flex items-center gap-2.5 border border-white/40 text-white bg-transparent font-[family-name:var(--font-inter)] font-medium text-[14.5px] tracking-[0.145px] px-6 h-[51px] rounded-[8px] hover:bg-white/10 hover:scale-[1.02] transition-all duration-200"
             >
               {secondaryButton.icon === "phone" && (
-                <img
-                  src={imgPhone}
-                  alt=""
-                  className="size-[15px] transition-transform duration-300 group-hover:rotate-12"
+                <Phone
+                  size={15}
+                  strokeWidth={2}
+                  className="transition-transform duration-300 group-hover:rotate-12"
                 />
               )}
               {secondaryButton.text}
               {secondaryButton.icon === "arrow" && (
-                <img
-                  src={imgArrow}
-                  alt=""
-                  className="size-[15px] opacity-70 transition-transform duration-200 group-hover:translate-x-1"
+                <ArrowRight
+                  size={15}
+                  strokeWidth={2}
+                  className="opacity-70 transition-transform duration-200 group-hover:translate-x-1"
                 />
               )}
             </Link>

@@ -11,7 +11,7 @@ import {
 } from "../components/shared";
 
 export const metadata: Metadata = {
-  title: "Industries — Liberty CAD",
+  title: "Industries — Liberty Innovations Inc",
   description:
     "Engineering consulting for Oil & Gas, Energy, Chemical, Mining, Water Treatment, and more. Trusted by plant owners and EPC companies worldwide.",
 };
@@ -109,7 +109,7 @@ export default function IndustriesPage() {
         <PageHero
           label="Industries"
           title="Industries We Serve"
-          description="Liberty CAD provides engineering consulting services across the industries that power our world. Our multidisciplinary expertise spans the unique requirements, codes, and challenges of each sector."
+          description="Liberty Innovations Inc provides engineering consulting services across the industries that power our world. Our multidisciplinary expertise spans the unique requirements, codes, and challenges of each sector."
         />
 
         {/* Industries Grid */}
@@ -123,7 +123,7 @@ export default function IndustriesPage() {
         <section className="bg-[#f7f8fa] py-24">
           <div className="max-w-[1120px] mx-auto px-6">
             <SectionHeader
-              label="Why Liberty CAD"
+              label="Why Liberty Innovations Inc"
               title="Industry-Specific Expertise"
               description="Our engineers understand the unique challenges and regulations of each industry we serve."
               maxWidth="560px"

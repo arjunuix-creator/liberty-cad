@@ -1,7 +1,5 @@
 import AnimateOnScroll from "./AnimateOnScroll";
-
-const imgCheckIcon =
-  "https://www.figma.com/api/mcp/asset/13f1307e-de30-43a3-8f1b-2de3b3d59a87";
+import { Check } from "lucide-react";
 
 const bullets = [
   "We collaborate closely with clients to understand project scope and timelines",
@@ -23,13 +21,13 @@ export default function ApproachSection() {
             Engineering That Understands Plant Operations
           </h2>
           <p className="font-[family-name:var(--font-inter)] text-[14.5px] md:text-[15.5px] text-[#6c7a89] leading-[1.8] mb-5 md:mb-6 max-w-[411px]">
-            We don&apos;t work in isolation. Liberty CAD collaborates closely with
+            We don&apos;t work in isolation. Liberty Innovations Inc collaborates closely with
             clients from concept to completion, understanding your project
             requirements, your construction timelines, and the real challenges
             your teams face every day.
           </p>
           <p className="font-[family-name:var(--font-inter)] font-medium text-[14.5px] md:text-[15.5px] text-[#2d3e50] leading-[1.8] mb-8 md:mb-10 max-w-[417px]">
-            Liberty CAD becomes{" "}
+            Liberty Innovations Inc becomes{" "}
             <strong className="font-semibold">
               an extension of your engineering team
             </strong>{" "}
@@ -42,7 +40,7 @@ export default function ApproachSection() {
               <AnimateOnScroll key={b} delay={200 + i * 80}>
                 <li className="flex items-start gap-3 group">
                   <div className="shrink-0 size-5 rounded-full bg-[rgba(27,79,114,0.1)] flex items-center justify-center mt-0.5 transition-colors duration-200 group-hover:bg-[rgba(27,79,114,0.18)]">
-                    <img src={imgCheckIcon} alt="" className="size-[11px]" />
+                    <Check size={11} strokeWidth={2.5} className="text-[#1b4f72]" />
                   </div>
                   <span className="font-[family-name:var(--font-inter)] text-[13.5px] md:text-[14.5px] text-[#3d4f5f] leading-[1.7]">
                     {b}

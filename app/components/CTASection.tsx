@@ -1,10 +1,6 @@
 import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
-
-const imgArrow =
-  "https://www.figma.com/api/mcp/asset/7406dfcc-118d-4411-bd1d-468423e2bc1c";
-const imgPhone =
-  "https://www.figma.com/api/mcp/asset/4b9c2d39-60c1-4e8a-8dd7-e1b4d98a699f";
+import { ArrowRight, Phone } from "lucide-react";
 
 export default function CTASection() {
   return (
@@ -17,7 +13,7 @@ export default function CTASection() {
           Get Started
         </p>
         <h2 className="font-[family-name:var(--font-manrope)] font-bold text-[42px] text-white leading-[1.15] tracking-[-1.05px] mb-7">
-          At Liberty CAD, We Don&apos;t Just Design — We Deliver Confidence.
+          At Liberty Innovations Inc, We Don&apos;t Just Design — We Deliver Confidence.
         </h2>
         <p className="font-[family-name:var(--font-inter)] font-normal text-[16px] text-white/45 leading-[1.75] mb-12 max-w-[414px] mx-auto">
           Let&apos;s remove the engineering capacity constraints slowing your
@@ -28,23 +24,23 @@ export default function CTASection() {
         <AnimateOnScroll delay={150} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           <Link
             href="/contact"
-            className="btn-scale group flex items-center gap-2.5 bg-white text-[#0b2545] font-[family-name:var(--font-inter)] font-semibold text-[14.5px] tracking-[0.145px] px-6 h-[50px] rounded-[8px] hover:bg-white/90 transition-colors"
+            className="btn-scale group flex items-center gap-2.5 bg-white text-[#0b2545] font-[family-name:var(--font-inter)] font-medium text-[14.5px] tracking-[0.145px] px-6 py-3 rounded-[8px] hover:bg-white/90 hover:scale-[1.02] transition-all duration-200"
           >
             Get a Quote
-            <img
-              src={imgArrow}
-              alt=""
-              className="size-[15px] transition-transform duration-200 group-hover:translate-x-1"
+            <ArrowRight
+              size={15}
+              strokeWidth={2}
+              className="transition-transform duration-200 group-hover:translate-x-1"
             />
           </Link>
           <a
             href="tel:2265265336"
-            className="btn-scale group flex items-center gap-2.5 bg-white/[0.06] border border-white/12 text-white/75 font-[family-name:var(--font-inter)] font-medium text-[14.5px] tracking-[0.145px] px-6 h-[51px] rounded-[8px] hover:bg-white/10 transition-colors"
+            className="btn-scale group flex items-center gap-2.5 border border-white/40 text-white bg-transparent font-[family-name:var(--font-inter)] font-medium text-[14.5px] tracking-[0.145px] px-6 py-3 rounded-[8px] hover:bg-white/10 hover:scale-[1.02] transition-all duration-200"
           >
-            <img
-              src={imgPhone}
-              alt=""
-              className="size-[15px] transition-transform duration-300 group-hover:rotate-12"
+            <Phone
+              size={15}
+              strokeWidth={2}
+              className="transition-transform duration-300 group-hover:rotate-12"
             />
             Schedule a Call
           </a>

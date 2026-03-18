@@ -1,45 +1,63 @@
 import AnimateOnScroll from "./AnimateOnScroll";
+import {
+  Flame,
+  Zap,
+  Thermometer,
+  FlaskConical,
+  HardHat,
+  Droplets,
+  Leaf,
+  Building2,
+} from "lucide-react";
 
 const industries = [
   {
-    icon: "https://www.figma.com/api/mcp/asset/dae4158d-b2cf-4639-aa0c-65a18c0494d1",
+    Icon: Flame,
     name: "Oil & Gas",
-    color: "rgba(230,126,34,0.06)",
+    color: "rgba(230,126,34,0.10)",
+    iconColor: "#e67e22",
   },
   {
-    icon: "https://www.figma.com/api/mcp/asset/c2e21899-86be-4376-86c3-2e2ae32a4496",
+    Icon: Zap,
     name: "Energy",
-    color: "rgba(241,196,15,0.06)",
+    color: "rgba(241,196,15,0.10)",
+    iconColor: "#d4a017",
   },
   {
-    icon: "https://www.figma.com/api/mcp/asset/f8769863-9824-41b2-8752-86e572ff97c1",
+    Icon: Thermometer,
     name: "Geothermal",
-    color: "rgba(231,76,60,0.06)",
+    color: "rgba(231,76,60,0.10)",
+    iconColor: "#e74c3c",
   },
   {
-    icon: "https://www.figma.com/api/mcp/asset/03dd0ceb-ddba-4005-ad25-2f93d4536c93",
+    Icon: FlaskConical,
     name: "Chemical",
-    color: "rgba(155,89,182,0.06)",
+    color: "rgba(155,89,182,0.10)",
+    iconColor: "#9b59b6",
   },
   {
-    icon: "https://www.figma.com/api/mcp/asset/591e5cc1-67d6-4f33-bb1b-7f267c74364f",
+    Icon: HardHat,
     name: "Mining",
-    color: "rgba(127,140,141,0.06)",
+    color: "rgba(127,140,141,0.10)",
+    iconColor: "#7f8c8d",
   },
   {
-    icon: "https://www.figma.com/api/mcp/asset/79bfb267-c6ec-443e-bc39-64520c5865a0",
+    Icon: Droplets,
     name: "Water Treatment",
-    color: "rgba(52,152,219,0.06)",
+    color: "rgba(52,152,219,0.10)",
+    iconColor: "#3498db",
   },
   {
-    icon: "https://www.figma.com/api/mcp/asset/c7f739f5-a83e-4705-b471-395c80d2f2ff",
+    Icon: Leaf,
     name: "Bio Gas",
-    color: "rgba(39,174,96,0.06)",
+    color: "rgba(39,174,96,0.10)",
+    iconColor: "#27ae60",
   },
   {
-    icon: "https://www.figma.com/api/mcp/asset/d37d5666-7978-4737-904a-211cf9b87f48",
+    Icon: Building2,
     name: "Industrial & Commercial Steel",
-    color: "rgba(44,62,80,0.06)",
+    color: "rgba(44,62,80,0.10)",
+    iconColor: "#2c3e50",
   },
 ];
 
@@ -66,10 +84,11 @@ export default function IndustriesSection() {
                   className="size-10 md:size-12 rounded-[12px] md:rounded-[14px] flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
                   style={{ backgroundColor: industry.color }}
                 >
-                  <img
-                    src={industry.icon}
-                    alt=""
-                    className="size-[18px] md:size-[22px] transition-transform duration-300 group-hover:scale-110"
+                  <industry.Icon
+                    size={20}
+                    strokeWidth={1.75}
+                    style={{ color: industry.iconColor }}
+                    className="transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>
                 <span className="font-[family-name:var(--font-inter)] font-medium text-[12px] md:text-[13px] text-[#5a6677] tracking-[0.13px] text-center transition-colors duration-200 group-hover:text-[#0b2545]">

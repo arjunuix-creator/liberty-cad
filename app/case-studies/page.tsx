@@ -86,7 +86,7 @@ const caseStudies: CaseStudy[] = [
 
 const testimonial: Testimonial = {
   quote:
-    "Liberty CAD has become an extension of our engineering team. Their understanding of fabrication constraints means we spend less time on revisions and more time building.",
+    "Liberty Innovations Inc has become an extension of our engineering team. Their understanding of fabrication constraints means we spend less time on revisions and more time building.",
   author: "Operations Director",
   role: "Operations Director",
   company: "Leading Industrial Fabricator",

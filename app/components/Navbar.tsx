@@ -36,7 +36,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
+      className={`fixed top-0 left-0 right-0 z-[999] transition-all duration-400 ${
         scrolled || mobileMenuOpen
           ? "bg-[#0b2545]/95 backdrop-blur-md border-b border-white/10 py-2"
           : "bg-transparent py-0"
@@ -51,10 +51,10 @@ export default function Navbar() {
         >
           <Image
             src="/logo-white.svg"
-            alt="Liberty CAD"
+            alt="Liberty Innovations Inc"
             width={200}
-            height={44}
-            className="h-[32px] md:h-[36px] w-auto"
+            height={40}
+            className="h-[36px] md:h-[40px] w-auto"
             priority
           />
         </Link>
@@ -102,13 +102,16 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu — drops down from below header */}
       <div
-        className={`lg:hidden fixed inset-0 top-[72px] bg-[#0b2545]/98 backdrop-blur-md transition-all duration-300 ${
-          mobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        className={`lg:hidden fixed top-[72px] left-0 w-full bg-[#0b2545] z-[998] transition-transform duration-300 ease-in-out ${
+          mobileMenuOpen ? "translate-y-0" : "-translate-y-[110%]"
         }`}
+        style={{ height: "calc(100vh - 72px)" }}
       >
-        <div className="flex flex-col p-6 pt-8 gap-2">
+
+        {/* Nav items */}
+        <div className="flex flex-col px-6 pt-6 gap-1 overflow-y-auto">
           {navLinks.map((link, index) => (
             <Link
               key={link.label}

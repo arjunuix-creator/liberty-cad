@@ -1,15 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
+import { ArrowRight } from "lucide-react";
 import {
   ProcessEngineeringIllustration,
   CivilStructuralIllustration,
   MechanicalEngineeringIllustration,
   PipingEngineeringIllustration,
 } from "./illustrations/ServiceIllustrations";
-
-const imgLearnMore =
-  "https://www.figma.com/api/mcp/asset/60013d6d-5fac-4677-a18b-f75a5432b586";
 
 type IllustrationComponent = () => React.ReactElement;
 
@@ -80,10 +78,10 @@ function ServiceCard({
             className="mt-8 md:mt-10 inline-flex items-center gap-1.5 font-[family-name:var(--font-inter)] font-semibold text-[13px] text-[#1b4f72] tracking-[0.195px] hover:text-[#0b2545] hover:gap-2.5 transition-all duration-200"
           >
             Learn More
-            <img
-              src={imgLearnMore}
-              alt=""
-              className="size-[13px] transition-transform duration-200 group-hover:translate-x-0.5"
+            <ArrowRight
+              size={13}
+              strokeWidth={2}
+              className="transition-transform duration-200 group-hover:translate-x-0.5"
             />
           </Link>
         </div>

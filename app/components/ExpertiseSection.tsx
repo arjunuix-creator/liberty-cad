@@ -1,34 +1,25 @@
 import AnimateOnScroll from "./AnimateOnScroll";
+import { Building2, BookOpen, Users, Layers } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
-const imgFabShop =
-  "https://www.figma.com/api/mcp/asset/cfb6fb40-6ea6-422a-af6e-866594e097aa";
-const imgIcon1 =
-  "https://www.figma.com/api/mcp/asset/01325b6c-bec8-42b2-a98d-0321417672a5";
-const imgIcon2 =
-  "https://www.figma.com/api/mcp/asset/a38e30e5-3328-4229-b7b4-b42f55449044";
-const imgIcon3 =
-  "https://www.figma.com/api/mcp/asset/5eee894d-52dc-4b4e-bbe5-63f7b2957b7f";
-const imgIcon4 =
-  "https://www.figma.com/api/mcp/asset/878106df-78ca-4d4f-8c2a-0f7095e75c8e";
-
-const features = [
+const features: { Icon: LucideIcon; title: string; description: string }[] = [
   {
-    icon: imgIcon1,
+    Icon: Building2,
     title: "Subsidiary of Liberty Steel",
     description: "Our engineering is grounded in decades of real-world construction and plant experience.",
   },
   {
-    icon: imgIcon2,
+    Icon: BookOpen,
     title: "Deep Code & Standards Knowledge",
     description: "ASME, API, AISC, CISC, CSA, IEC, IEEE, NFPA, NEC — complete standards coverage for every project.",
   },
   {
-    icon: imgIcon3,
+    Icon: Users,
     title: "Experienced Engineering Team",
     description: "50+ multidisciplinary engineers across all disciplines, committed to quality and innovation.",
   },
   {
-    icon: imgIcon4,
+    Icon: Layers,
     title: "Greenfield & Brownfield Experience",
     description: "New plant builds, revamps, expansions, and refurbishments across industries worldwide.",
   },
@@ -45,8 +36,8 @@ export default function ExpertiseSection() {
         <AnimateOnScroll direction="left" className="flex-1 relative w-full lg:w-auto">
           <div className="rounded-[16px] overflow-hidden shadow-[0px_32px_80px_-20px_rgba(0,0,0,0.3)] group">
             <img
-              src={imgFabShop}
-              alt="Liberty Steel fabrication shop"
+              src="/our-expertise.jpg"
+              alt="Our Expertise"
               className="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover transition-transform duration-700 group-hover:scale-[1.03]"
             />
           </div>
@@ -75,7 +66,7 @@ export default function ExpertiseSection() {
             Built on Decades of Engineering Excellence
           </h2>
           <p className="font-[family-name:var(--font-inter)] text-[14.5px] md:text-[15.5px] text-white/50 leading-[1.8] mb-8 md:mb-12 max-w-[512px]">
-            Liberty CAD operates as a subsidiary of Liberty Steel, bringing
+            Liberty Innovations Inc operates as a subsidiary of Liberty Steel, bringing
             decades of real-world construction and plant engineering expertise
             to every project. We don&apos;t just understand engineering theory
             — we know how things get built.
@@ -86,10 +77,10 @@ export default function ExpertiseSection() {
               <AnimateOnScroll key={f.title} delay={200 + i * 80}>
                 <div className="group cursor-default">
                   <div className="size-9 rounded-[10px] bg-white/[0.06] flex items-center justify-center mb-4 md:mb-5 transition-colors duration-200 group-hover:bg-white/[0.12]">
-                    <img
-                      src={f.icon}
-                      alt=""
-                      className="size-[17px] transition-transform duration-300 group-hover:scale-110"
+                    <f.Icon
+                      size={17}
+                      strokeWidth={1.75}
+                      className="text-[#7ec8e3] transition-transform duration-300 group-hover:scale-110"
                     />
                   </div>
                   <h4 className="font-[family-name:var(--font-manrope)] font-semibold text-[14.5px] md:text-[15.5px] text-white/90 leading-[1.35] tracking-[-0.155px] mb-2 md:mb-3">

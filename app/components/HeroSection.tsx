@@ -1,10 +1,7 @@
 import Link from "next/link";
+import { ArrowRight, ChevronDown } from "lucide-react";
 
 const imgHero = "/Hero-bannar.jpg";
-const imgArrowRight =
-  "https://www.figma.com/api/mcp/asset/60013d6d-5fac-4677-a18b-f75a5432b586";
-const imgChevronDown =
-  "https://www.figma.com/api/mcp/asset/e1904a92-839b-425d-abaf-1a0a790f3c4f";
 
 const industries = [
   "Oil & Gas",
@@ -53,22 +50,14 @@ export default function HeroSection() {
               className="btn-scale group flex items-center gap-2.5 bg-white text-[#0b2545] font-[family-name:var(--font-inter)] font-semibold text-[14.5px] tracking-[0.145px] px-6 h-[51px] rounded-[8px] hover:bg-white/90 transition-colors"
             >
               Get a Quote
-              <img
-                src={imgArrowRight}
-                alt=""
-                className="size-[15px] transition-transform duration-200 group-hover:translate-x-1"
-              />
+              <ArrowRight size={15} strokeWidth={2} className="transition-transform duration-200 group-hover:translate-x-1" />
             </Link>
             <Link
               href="/services"
               className="btn-scale group flex items-center gap-2.5 border border-white/20 text-white/85 font-[family-name:var(--font-inter)] font-medium text-[14.5px] tracking-[0.145px] px-6 h-[51px] rounded-[8px] hover:bg-white/10 transition-colors"
             >
               Explore Our Services
-              <img
-                src={imgChevronDown}
-                alt=""
-                className="size-[15px] transition-transform duration-200 group-hover:translate-y-0.5"
-              />
+              <ChevronDown size={15} strokeWidth={2} className="transition-transform duration-200 group-hover:translate-y-0.5" />
             </Link>
           </div>
         </div>

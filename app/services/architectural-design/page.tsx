@@ -6,7 +6,7 @@ import AnimateOnScroll from "../../components/AnimateOnScroll";
 import { CTASection } from "../../components/shared";
 
 export const metadata: Metadata = {
-  title: "Architectural Design — Liberty CAD",
+  title: "Architectural Design — Liberty Innovations Inc",
   description:
     "Exceptional 3D renderings and comprehensive architectural plans. Bringing your projects to life with stunning visual detail, accuracy, and construction-ready documentation.",
 };
@@ -35,7 +35,7 @@ export default function ArchitecturalDesignPage() {
                     Visualize Your Vision
                   </h3>
                   <p className="font-[family-name:var(--font-inter)] text-[15px] text-[#7a8694] leading-[1.8]">
-                    Liberty CAD provides exceptional 3D renderings that bring your projects to life with
+                    Liberty Innovations Inc provides exceptional 3D renderings that bring your projects to life with
                     stunning visual detail and accuracy. By using cutting-edge technology and expert
                     techniques, we create realistic, high-quality renderings that showcase your designs
                     in their best light. Whether for presentations, marketing, or design development,

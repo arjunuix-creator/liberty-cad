@@ -1,14 +1,6 @@
 import AnimateOnScroll from "./AnimateOnScroll";
 import Image from "next/image";
-
-const imgPhone =
-  "https://www.figma.com/api/mcp/asset/9ea5f2f1-f572-43f9-95c6-4995b8ce3c7a";
-const imgEmail =
-  "https://www.figma.com/api/mcp/asset/8b773b69-edb0-4cd3-8ec0-a421e883c42c";
-const imgPhoneAlt =
-  "https://www.figma.com/api/mcp/asset/5f44b683-a349-4b8d-82cd-5e9267b0cc06";
-const imgLocation =
-  "https://www.figma.com/api/mcp/asset/f644e836-7778-4c40-a2f5-d6c1886b0287";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const serviceLinks = [
   { label: "Plant Engineering", href: "/services/plant-engineering" },
@@ -34,7 +26,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-6">
               <Image
                 src="/logo-white.svg"
-                alt="Liberty CAD"
+                alt="Liberty Innovations Inc"
                 width={150}
                 height={33}
                 className="h-[28px] w-auto transition-opacity duration-200 hover:opacity-80"
@@ -48,11 +40,7 @@ export default function Footer() {
               href="tel:2265265336"
               className="flex items-center gap-2.5 font-[family-name:var(--font-inter)] font-medium text-[13.5px] text-white/40 hover:text-white/60 transition-colors group"
             >
-              <img
-                src={imgPhone}
-                alt=""
-                className="size-[13px] transition-transform duration-300 group-hover:rotate-12"
-              />
+              <Phone size={13} strokeWidth={1.75} className="transition-transform duration-300 group-hover:rotate-12" />
               226-526-5336
             </a>
           </AnimateOnScroll>
@@ -104,15 +92,11 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li>
                 <a
-                  href="mailto:info@libertycad.com"
+                  href="mailto:Info@libertyinnovation.com"
                   className="flex items-center gap-3 font-[family-name:var(--font-inter)] font-normal text-[13.5px] text-white/30 hover:text-white/60 transition-colors group"
                 >
-                  <img
-                    src={imgEmail}
-                    alt=""
-                    className="size-3.5 shrink-0 transition-transform duration-300 group-hover:scale-110"
-                  />
-                  info@libertycad.com
+                  <Mail size={14} strokeWidth={1.75} className="shrink-0 transition-transform duration-300 group-hover:scale-110" />
+                  Info@libertyinnovation.com
                 </a>
               </li>
               <li>
@@ -120,18 +104,14 @@ export default function Footer() {
                   href="tel:2265265336"
                   className="flex items-center gap-3 font-[family-name:var(--font-inter)] font-normal text-[13.5px] text-white/30 hover:text-white/60 transition-colors group"
                 >
-                  <img
-                    src={imgPhoneAlt}
-                    alt=""
-                    className="size-3.5 shrink-0 transition-transform duration-300 group-hover:rotate-12"
-                  />
+                  <Phone size={14} strokeWidth={1.75} className="shrink-0 transition-transform duration-300 group-hover:rotate-12" />
                   226-526-5336
                 </a>
               </li>
               <li>
                 <div className="flex items-start gap-3 font-[family-name:var(--font-inter)] font-normal text-[13.5px] text-white/30">
-                  <img src={imgLocation} alt="" className="size-3.5 shrink-0 mt-0.5" />
-                  Windsor, Ontario, Canada
+                  <MapPin size={14} strokeWidth={1.75} className="shrink-0 mt-0.5" />
+                  Irving, TX
                 </div>
               </li>
             </ul>
@@ -141,7 +121,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-[family-name:var(--font-inter)] font-normal text-[12.5px] text-white/20 text-center sm:text-left">
-            © 2026 Liberty CAD, Inc. All rights reserved.
+            © 2026 Liberty Innovations Inc, Inc. All rights reserved.
           </p>
           <div className="flex items-center gap-6 sm:gap-8">
             <a

@@ -6,7 +6,7 @@ import AnimateOnScroll from "../../components/AnimateOnScroll";
 import { CTASection } from "../../components/shared";
 
 export const metadata: Metadata = {
-  title: "Structural Engineering — Liberty CAD",
+  title: "Structural Engineering — Liberty Innovations Inc",
   description:
     "Structural steel detailing and engineering services. 20 to 10,000 tons. AISC, CISC, ASTM standards. Tekla and SDS2/RISA. USA and Canada.",
 };
@@ -55,7 +55,7 @@ export default function StructuralEngineeringPage() {
                   Precision Steel Detailing
                 </h2>
                 <p className="font-[family-name:var(--font-inter)] text-[16px] text-[#7a8694] leading-[1.8] mb-5">
-                  Liberty CAD provides structural steel detailing services for all kinds of structures
+                  Liberty Innovations Inc provides structural steel detailing services for all kinds of structures
                   in both Imperial and metric environments, in accordance with AISC, CISC, BS &amp; IS
                   stipulations.
                 </p>
@@ -123,7 +123,7 @@ export default function StructuralEngineeringPage() {
 
         <CTASection
           title="Ready to Start Your Structural Project?"
-          description="Get in touch to discuss your structural steel requirements and how Liberty CAD can deliver."
+          description="Get in touch to discuss your structural steel requirements and how Liberty Innovations Inc can deliver."
           primaryButton={{ text: "Get in Touch", href: "/contact" }}
         />
       </main>

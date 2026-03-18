@@ -1,9 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
-
-const imgArrowRight =
-  "https://www.figma.com/api/mcp/asset/60013d6d-5fac-4677-a18b-f75a5432b586";
+import { ArrowRight } from "lucide-react";
 
 interface PageHeroProps {
   label: string;
@@ -35,10 +33,10 @@ export default function PageHero({ label, title, description, cta }: PageHeroPro
               className="btn-scale mt-8 group inline-flex items-center gap-2.5 bg-white text-[#0b2545] font-[family-name:var(--font-inter)] font-semibold text-[14.5px] tracking-[0.145px] px-6 h-[51px] rounded-[8px] hover:bg-white/90 transition-colors"
             >
               {cta.text}
-              <img
-                src={imgArrowRight}
-                alt=""
-                className="size-[15px] transition-transform duration-200 group-hover:translate-x-1"
+              <ArrowRight
+                size={15}
+                strokeWidth={2}
+                className="transition-transform duration-200 group-hover:translate-x-1"
               />
             </Link>
           )}

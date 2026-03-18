@@ -1,27 +1,22 @@
 import AnimateOnScroll from "./AnimateOnScroll";
+import { Users, AlertTriangle, FileText } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
-const imgIcon1 =
-  "https://www.figma.com/api/mcp/asset/44d3fe0e-87d8-4b90-8cc5-16735e60e66b";
-const imgIcon2 =
-  "https://www.figma.com/api/mcp/asset/6e66ee6d-6e89-4342-9bda-dfaa851e5798";
-const imgIcon3 =
-  "https://www.figma.com/api/mcp/asset/5be575be-f00a-4aac-8aa5-d0d4876ad547";
-
-const cards = [
+const cards: { Icon: LucideIcon; num: string; title: string; body: string }[] = [
   {
-    icon: imgIcon1,
+    Icon: Users,
     num: "01",
     title: "Engineering Teams Stretched Beyond Capacity",
     body: "When your internal engineering team is overwhelmed, projects stall. Deadlines slip, quality suffers, and critical design reviews get rushed. You need additional capacity without compromising on quality or timelines.",
   },
   {
-    icon: imgIcon2,
+    Icon: AlertTriangle,
     num: "02",
     title: "Design Errors Discovered During Construction",
     body: "Catching mistakes in the field means rework, wasted materials, and costly delays that erode project margins and damage client relationships. The further downstream an error travels, the more expensive it becomes.",
   },
   {
-    icon: imgIcon3,
+    Icon: FileText,
     num: "03",
     title: "Code Compliance Reviews Causing Costly Revisions",
     body: "Navigating ASME, API, AISC, and local codes is complex. Non-compliance means redesigns, project delays, and potential safety risks across the plant lifecycle. Getting it right the first time is non-negotiable.",
@@ -54,10 +49,10 @@ export default function EmpathySection() {
               <div className="card-lift bg-[#fafbfc] border border-[#eceef1] rounded-[14px] p-8 md:p-11 h-full group cursor-default flex flex-col">
                 <div className="flex items-start justify-between mb-8 md:mb-10">
                   <div className="size-11 rounded-[10px] bg-[rgba(11,37,69,0.04)] flex items-center justify-center transition-colors duration-200 group-hover:bg-[rgba(11,37,69,0.08)]">
-                    <img
-                      src={card.icon}
-                      alt=""
-                      className="size-5 transition-transform duration-300 group-hover:scale-110"
+                    <card.Icon
+                      size={20}
+                      strokeWidth={1.75}
+                      className="text-[#1b4f72] transition-transform duration-300 group-hover:scale-110"
                     />
                   </div>
                   <span className="font-[family-name:var(--font-manrope)] font-extrabold text-[28px] md:text-[32px] text-[#d6dae0] tracking-[-0.96px] leading-none transition-colors duration-200 group-hover:text-[#c8d4e0]">
