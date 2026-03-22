@@ -54,7 +54,7 @@ const keyFacts = [
   { attribute: "Parent Company", detail: "Liberty Steel" },
   { attribute: "Established", detail: "2015" },
   { attribute: "Office", detail: "6565 N McArthur Blvd, Suite 225, Irving, TX 75039" },
-  { attribute: "Phone", detail: "226-526-5336" },
+  { attribute: "Phone", detail: "(214) 396-2312" },
   { attribute: "Team Size", detail: "50+ engineers and staff" },
   { attribute: "Certification", detail: "AS 9100 Certified" },
   { attribute: "Service Area", detail: "North America and worldwide" },
@@ -260,10 +260,10 @@ export default function AboutPage() {
                   Get a Quote
                 </a>
                 <a
-                  href="tel:2265265336"
+                  href="tel:2143962312"
                   className="btn-scale inline-flex items-center gap-2.5 border border-white/20 text-white/85 font-[family-name:var(--font-inter)] font-medium text-[14.5px] tracking-[0.145px] px-6 h-[51px] rounded-[8px] hover:bg-white/10 transition-colors"
                 >
-                  Schedule a Call: 226-526-5336
+                  Schedule a Call: (214) 396-2312
                 </a>
               </div>
             </AnimateOnScroll>

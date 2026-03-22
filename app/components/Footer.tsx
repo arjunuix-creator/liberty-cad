@@ -37,11 +37,11 @@ export default function Footer() {
               contractors across North America. A subsidiary of Liberty Steel.
             </p>
             <a
-              href="tel:2265265336"
+              href="tel:2143962312"
               className="flex items-center gap-2.5 font-[family-name:var(--font-inter)] font-medium text-[13.5px] text-white/40 hover:text-white/60 transition-colors group"
             >
               <Phone size={13} strokeWidth={1.75} className="transition-transform duration-300 group-hover:rotate-12" />
-              226-526-5336
+              (214) 396-2312
             </a>
           </AnimateOnScroll>
 
@@ -101,11 +101,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="tel:2265265336"
+                  href="tel:2143962312"
                   className="flex items-center gap-3 font-[family-name:var(--font-inter)] font-normal text-[13.5px] text-white/30 hover:text-white/60 transition-colors group"
                 >
                   <Phone size={14} strokeWidth={1.75} className="shrink-0 transition-transform duration-300 group-hover:rotate-12" />
-                  226-526-5336
+                  (214) 396-2312
                 </a>
               </li>
               <li>

@@ -34,7 +34,7 @@ export default function CTASection() {
             />
           </Link>
           <a
-            href="tel:2265265336"
+            href="tel:2143962312"
             className="btn-scale group flex items-center gap-2.5 border border-white/40 text-white bg-transparent font-[family-name:var(--font-inter)] font-medium text-[14.5px] tracking-[0.145px] px-6 py-3 rounded-[8px] hover:bg-white/10 hover:scale-[1.02] transition-all duration-200"
           >
             <Phone
@@ -52,10 +52,10 @@ export default function CTASection() {
             Or call us directly:
           </span>
           <a
-            href="tel:2265265336"
+            href="tel:2143962312"
             className="font-[family-name:var(--font-inter)] font-medium text-[13.5px] text-white/50 hover:text-white/70 transition-colors"
           >
-            226-526-5336
+            (214) 396-2312
           </a>
         </AnimateOnScroll>
       </AnimateOnScroll>

@@ -14,8 +14,8 @@ const contactInfo = [
   },
   {
     label: "Phone",
-    value: "226-526-5336",
-    href: "tel:2265265336",
+    value: "(214) 396-2312",
+    href: "tel:2143962312",
   },
   {
     label: "Email",
@@ -278,7 +278,7 @@ export default function ContactPage() {
               </h2>
               <p className="font-[family-name:var(--font-inter)] text-[16px] text-[#7a8694] leading-[1.75] max-w-[520px] mx-auto">
                 We are in the business of engineering, but what we are really building is a
-                brighter future. Call us directly at 226-526-5336 or email Info@libertyinnovation.com.
+                brighter future. Call us directly at (214) 396-2312 or email Info@libertyinnovation.com.
               </p>
             </AnimateOnScroll>
           </div>
