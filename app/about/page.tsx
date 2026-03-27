@@ -5,9 +5,9 @@ import PageHero from "../components/PageHero";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 
 export const metadata: Metadata = {
-  title: "About — Liberty Innovations Inc",
+  title: "About — Liberty CAD Inc",
   description:
-    "Liberty Innovations Inc, a subsidiary of Liberty Steel, delivers end-to-end plant engineering. Greenfield & Brownfield projects. ASME, API, AISC compliant. 50+ engineers.",
+    "Liberty CAD Inc, a subsidiary of Liberty Steel, delivers end-to-end plant engineering. Greenfield & Brownfield projects. ASME, API, AISC compliant. 50+ engineers.",
 };
 
 const values = [
@@ -70,7 +70,7 @@ export default function AboutPage() {
         <PageHero
           label="About Us"
           title={<><span className="block">Engineering Excellence</span><span className="block">From Concept to Construction</span></>}
-          description="Liberty Innovations Inc is a trusted provider of multidisciplinary engineering consulting services, delivering end-to-end solutions for plant owners, EPC companies, contractors, and design firms worldwide."
+          description="Liberty CAD Inc is a trusted provider of multidisciplinary engineering consulting services, delivering end-to-end solutions for plant owners, EPC companies, contractors, and design firms worldwide."
         />
 
         {/* Story Section */}
@@ -85,7 +85,7 @@ export default function AboutPage() {
                   Built on Decades of Engineering Experience
                 </h2>
                 <p className="font-[family-name:var(--font-inter)] text-[16px] text-[#7a8694] leading-[1.8] mb-5">
-                  Liberty Innovations Inc operates as a subsidiary of Liberty Steel, with a dedicated
+                  Liberty CAD Inc operates as a subsidiary of Liberty Steel, with a dedicated
                   engineering team of 50+ professionals committed to innovation and quality.
                   Established in 2015, our team brings decades of combined experience in plant
                   design, structural engineering, and industrial project delivery.
@@ -176,7 +176,7 @@ export default function AboutPage() {
                 What Sets Us Apart
               </p>
               <h2 className="font-[family-name:var(--font-manrope)] font-bold text-[48px] text-[#0b2545] leading-[1.1] tracking-[-1.2px]">
-                Why Clients Choose Liberty Innovations Inc
+                Why Clients Choose Liberty CAD Inc
               </h2>
             </AnimateOnScroll>
 
@@ -249,7 +249,7 @@ export default function AboutPage() {
               </h2>
               <p className="font-[family-name:var(--font-inter)] text-[16px] md:text-[17px] text-white/60 leading-[1.75] max-w-[560px] mx-auto mb-10">
                 Whether you need support for a single discipline or a full multi-discipline
-                Greenfield project, Liberty Innovations Inc delivers the same dedication and quality.
+                Greenfield project, Liberty CAD Inc delivers the same dedication and quality.
                 Let&apos;s talk about your next project.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

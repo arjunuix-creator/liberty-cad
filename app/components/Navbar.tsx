@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -15,6 +16,7 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -47,11 +49,14 @@ export default function Navbar() {
         <Link
           href="/"
           className="flex items-center group transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]"
-          onClick={() => setMobileMenuOpen(false)}
+          onClick={() => {
+            setMobileMenuOpen(false);
+            if (pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
         >
           <Image
             src="/logo-white.svg"
-            alt="Liberty Innovations Inc"
+            alt="Liberty CAD Inc"
             width={200}
             height={40}
             className="h-[36px] md:h-[40px] w-auto"

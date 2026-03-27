@@ -13,7 +13,7 @@ export default function CTASection() {
           Get Started
         </p>
         <h2 className="font-[family-name:var(--font-manrope)] font-bold text-[42px] text-white leading-[1.15] tracking-[-1.05px] mb-7">
-          At Liberty Innovations Inc, We Don&apos;t Just Design — We Deliver Confidence.
+          At Liberty CAD Inc, We Don&apos;t Just Design — We Deliver Confidence.
         </h2>
         <p className="font-[family-name:var(--font-inter)] font-normal text-[16px] text-white/45 leading-[1.75] mb-12 max-w-[414px] mx-auto">
           Let&apos;s remove the engineering capacity constraints slowing your

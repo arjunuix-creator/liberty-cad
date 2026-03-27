@@ -51,7 +51,7 @@ export default function TrustSection() {
             Why Us
           </p>
           <h2 className="font-[family-name:var(--font-manrope)] font-bold text-[32px] md:text-[48px] text-[#0b2545] leading-[1.1] tracking-[-1.2px] max-w-[538px] mx-auto">
-            Why Clients Choose Liberty Innovations Inc
+            Why Clients Choose Liberty CAD Inc
           </h2>
         </AnimateOnScroll>
 

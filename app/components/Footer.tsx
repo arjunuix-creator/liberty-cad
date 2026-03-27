@@ -26,7 +26,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-6">
               <Image
                 src="/logo-white.svg"
-                alt="Liberty Innovations Inc"
+                alt="Liberty CAD Inc"
                 width={150}
                 height={33}
                 className="h-[28px] w-auto transition-opacity duration-200 hover:opacity-80"
@@ -121,7 +121,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-[family-name:var(--font-inter)] font-normal text-[12.5px] text-white/20 text-center sm:text-left">
-            © 2026 Liberty Innovations Inc, Inc. All rights reserved.
+            © 2026 Liberty CAD Inc. All rights reserved.
           </p>
           <div className="flex items-center gap-6 sm:gap-8">
             <a

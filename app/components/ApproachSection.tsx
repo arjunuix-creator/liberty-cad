@@ -21,13 +21,13 @@ export default function ApproachSection() {
             Engineering That Understands Plant Operations
           </h2>
           <p className="font-[family-name:var(--font-inter)] text-[14.5px] md:text-[15.5px] text-[#6c7a89] leading-[1.8] mb-5 md:mb-6 max-w-[411px]">
-            We don&apos;t work in isolation. Liberty Innovations Inc collaborates closely with
+            We don&apos;t work in isolation. Liberty CAD Inc collaborates closely with
             clients from concept to completion, understanding your project
             requirements, your construction timelines, and the real challenges
             your teams face every day.
           </p>
           <p className="font-[family-name:var(--font-inter)] font-medium text-[14.5px] md:text-[15.5px] text-[#2d3e50] leading-[1.8] mb-8 md:mb-10 max-w-[417px]">
-            Liberty Innovations Inc becomes{" "}
+            Liberty CAD Inc becomes{" "}
             <strong className="font-semibold">
               an extension of your engineering team
             </strong>{" "}

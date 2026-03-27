@@ -13,9 +13,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Liberty Innovations Inc — Engineering Precision. From Design to Delivery.",
+  title: "Liberty CAD Inc — Engineering Precision. From Design to Delivery.",
   description:
-    "Liberty Innovations Inc — multidisciplinary plant engineering consulting services. Process, structural, mechanical, piping engineering. From design to delivery across North America.",
+    "Liberty CAD Inc — multidisciplinary plant engineering consulting services. Process, structural, mechanical, piping engineering. From design to delivery across North America.",
 };
 
 export default function RootLayout({

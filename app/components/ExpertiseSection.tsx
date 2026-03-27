@@ -66,7 +66,7 @@ export default function ExpertiseSection() {
             Built on Decades of Engineering Excellence
           </h2>
           <p className="font-[family-name:var(--font-inter)] text-[14.5px] md:text-[15.5px] text-white/50 leading-[1.8] mb-8 md:mb-12 max-w-[512px]">
-            Liberty Innovations Inc operates as a subsidiary of Liberty Steel, bringing
+            Liberty CAD Inc operates as a subsidiary of Liberty Steel, bringing
             decades of real-world construction and plant engineering expertise
             to every project. We don&apos;t just understand engineering theory
             — we know how things get built.

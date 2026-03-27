@@ -6,7 +6,7 @@ import AnimateOnScroll from "../../components/AnimateOnScroll";
 import { CTASection } from "../../components/shared";
 
 export const metadata: Metadata = {
-  title: "Plant Engineering — Liberty Innovations Inc",
+  title: "Plant Engineering — Liberty CAD Inc",
   description:
     "Plant design engineering consulting services for Oil & Gas, Power Generation, Chemical, Mining, and Water Treatment. From concept to construction documentation.",
 };
@@ -135,7 +135,7 @@ export default function PlantEngineeringPage() {
                   Full Spectrum Plant Engineering
                 </h2>
                 <p className="font-[family-name:var(--font-inter)] text-[16px] text-[#7a8694] leading-[1.8] mb-5">
-                  Liberty Innovations Inc provides a full spectrum of engineering consulting services for Oil &amp; Gas,
+                  Liberty CAD Inc provides a full spectrum of engineering consulting services for Oil &amp; Gas,
                   Power Generation, Chemical, Paper &amp; Pulp, Mining &amp; Minerals, and Waste Water
                   Treatment plants — each phase of project design development, from concept to definitive
                   design and documentation for construction.
@@ -243,7 +243,7 @@ export default function PlantEngineeringPage() {
 
         <CTASection
           title="Ready to Start Your Plant Engineering Project?"
-          description="Get in touch to discuss your project requirements and how Liberty Innovations Inc can support your goals."
+          description="Get in touch to discuss your project requirements and how Liberty CAD Inc can support your goals."
           primaryButton={{ text: "Get in Touch", href: "/contact" }}
         />
       </main>

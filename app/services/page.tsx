@@ -11,7 +11,7 @@ import {
 } from "../components/shared";
 
 export const metadata: Metadata = {
-  title: "Services — Liberty Innovations Inc",
+  title: "Services — Liberty CAD Inc",
   description:
     "Full spectrum engineering consulting: plant design, process, structural, mechanical, piping, BIM. Concept to construction-ready documentation.",
 };

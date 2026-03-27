@@ -6,7 +6,7 @@ import AnimateOnScroll from "../../components/AnimateOnScroll";
 import { CTASection } from "../../components/shared";
 
 export const metadata: Metadata = {
-  title: "BIM Engineering — Liberty Innovations Inc",
+  title: "BIM Engineering — Liberty CAD Inc",
   description:
     "BIM engineering services: MEP BIM models, 3D coordination, clash detection, and construction documentation using industry-standard tools.",
 };
@@ -68,7 +68,7 @@ export default function BIMEngineeringPage() {
                   Coordinated 3D Modeling
                 </h2>
                 <p className="font-[family-name:var(--font-inter)] text-[16px] text-[#7a8694] leading-[1.8]">
-                  Liberty Innovations Inc offers a suite of services for architects and engineers. Starting with a
+                  Liberty CAD Inc offers a suite of services for architects and engineers. Starting with a
                   concept, we help transform ideas into 3D models using industry-standard tools and
                   technologies. These models can be leveraged for sales presentations, design coordination,
                   and construction documentation. The 3D models ensure that designs across all disciplines
