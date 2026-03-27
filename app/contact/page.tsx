@@ -19,8 +19,8 @@ const contactInfo = [
   },
   {
     label: "Email",
-    value: "Info@libertyinnovation.com",
-    href: "mailto:Info@libertyinnovation.com",
+    value: "Info@libertycad.ca",
+    href: "mailto:Info@libertycad.ca",
   },
 ];
 
@@ -278,7 +278,7 @@ export default function ContactPage() {
               </h2>
               <p className="font-[family-name:var(--font-inter)] text-[16px] text-[#7a8694] leading-[1.75] max-w-[520px] mx-auto">
                 We are in the business of engineering, but what we are really building is a
-                brighter future. Call us directly at (214) 396-2312 or email Info@libertyinnovation.com.
+                brighter future. Call us directly at (214) 396-2312 or email Info@libertycad.ca.
               </p>
             </AnimateOnScroll>
           </div>

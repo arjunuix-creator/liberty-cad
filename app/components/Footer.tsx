@@ -92,11 +92,11 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li>
                 <a
-                  href="mailto:Info@libertyinnovation.com"
+                  href="mailto:Info@libertycad.ca"
                   className="flex items-center gap-3 font-[family-name:var(--font-inter)] font-normal text-[13.5px] text-white/30 hover:text-white/60 transition-colors group"
                 >
                   <Mail size={14} strokeWidth={1.75} className="shrink-0 transition-transform duration-300 group-hover:scale-110" />
-                  Info@libertyinnovation.com
+                  Info@libertycad.ca
                 </a>
               </li>
               <li>
