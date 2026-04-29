@@ -1,6 +1,6 @@
 import AnimateOnScroll from "./AnimateOnScroll";
 import Image from "next/image";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 
 const serviceLinks = [
   { label: "Plant Engineering", href: "/services/plant-engineering" },
@@ -90,15 +90,6 @@ export default function Footer() {
               Contact
             </h4>
             <ul className="flex flex-col gap-4">
-              <li>
-                <a
-                  href="mailto:Info@libertycad.ca"
-                  className="flex items-center gap-3 font-[family-name:var(--font-inter)] font-normal text-[13.5px] text-white/30 hover:text-white/60 transition-colors group"
-                >
-                  <Mail size={14} strokeWidth={1.75} className="shrink-0 transition-transform duration-300 group-hover:scale-110" />
-                  Info@libertycad.ca
-                </a>
-              </li>
               <li>
                 <a
                   href="tel:2143962312"
